@@ -228,7 +228,6 @@
   text-align: center;
    }
 
-/* Container for all offers */
 /* Offer section container */
 .offer-grid {
   display: flex;
@@ -243,32 +242,6 @@
 }
 
 .offer-card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
-  width: 200px;
-  transition: transform 0.3s ease;
-  background-color: #fff;
-  text-align: center;
-}
-
-.offer-card:hover {
-  transform: scale(1.05);
-}
-
-.offer-card img {
-  width: 100%;
-  height: auto;
-}
-
-.offer-card p {
-  margin: 0;
-  padding: 10px;
-  font-weight: bold;
-}
-
-/* Individual Offer Card */
-.offer-card {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 10px;
@@ -279,6 +252,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+}
+
+.offer-card:hover {
+  transform: scale(1.05);
 }
 
 .offer-card img {
@@ -294,12 +272,10 @@
   text-align: center;
 }
 
-
-
-
 /* Responsive layout */
 @media (max-width: 600px) {
-  .offer-container {
+  .offer-grid {
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   }
 
@@ -307,6 +283,7 @@
     height: 120px;
   }
 }
+
 
 
     /* Blog Section */
