@@ -279,7 +279,7 @@
   }
 }
 
-/* Responsive for mobile */
+/* Responsive for mobile 
 @media (max-width: 600px) {
   .offer-grid {
     grid-template-columns: repeat(1, 1fr);
@@ -288,7 +288,31 @@
   .offer-card img {
     height: 140px;
   }
-}
+}*/
+
+     /* Responsive */
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: row;
+        text-align: center;
+      }
+      .nav-links {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        align-items: flex-start;
+      }
+      /* Blog */
+  .blog-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .blog-card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+    }
 
 
 
